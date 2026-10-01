@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Body
+from fastapi import FastAPI, Path, Query, HTTPException
 
 BOOKS = [
     {'title': 'Title One', 'author': 'Author One', 'category': 'science'},
