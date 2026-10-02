@@ -9,3 +9,10 @@ async def userid(user_id):
 @app.get("/users")
 async def get_user(name):
     return {"Name" : name}
+
+@app.post("/create-users")
+async def create_user(name:str, age:int):
+    return {
+        "name" : name,
+        "age" : age
+    }
